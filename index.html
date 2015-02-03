@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/img/favicons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="assets/img/favicons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<!--<link rel="stylesheet" href="assets/css/style.css">-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css"><![endif]-->
+	<title>Blue Honey</title>
+	<style>
+	/* -----------
+	Reset
+	------------ */
+
+		/* http://meyerweb.com/eric/tools/css/reset/
+			v2.0 | 20110126
+			License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed,
+		figure, figcaption, footer, header, hgroup,
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure,
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		* {
+			position: relative;
+			box-sizing: border-box;
+		}
+
+
+
+	/* -----------
+	Page
+
+	(needs renaming)
+	------------ */
+
+	* {
+		text-rendering: optimizeLegibility;
+		font-smoothing: antialiased;
+		zoom: 1;
+	}
+
+	html {
+		overflow-y: scroll;
+		min-height: 100%;
+		height: 100%;
+	}
+
+	body {
+		font-size: 14px;
+		font-size: 0.875em;
+		font-family: Caslon540BT-Roman, Georgia, serif;
+		font-weight: normal;
+		line-height: 1.6;
+		background: #141414;
+		min-height: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	img {
+		border: none;
+		vertical-align: middle;
+		height: auto;
+	}
+
+	img,
+	object,
+	video,
+	audio {
+		max-width: 100%;
+	}
+
+
+
+	/* ------------
+	Typography
+	-------------*/
+
+	a {
+		color: inherit;
+		transition: color 200ms;
+		text-decoration: none;
+	}
+
+	a:hover { color: #888; }
+
+	p, .p {
+		margin-bottom: 16px;
+		margin-bottom: 1rem;
+	}
+
+	.h1 { font-size: 5em; }
+
+	.lead {
+		font-size: 1.5em;
+		line-height: 1.35;
+	}
+
+	.all-caps { text-transform: uppercase; }
+
+	.small {
+		font-size: .8em;
+		color: #888;
+	}
+
+
+
+	/* ------------
+	Components
+	-------------*/
+
+	.container { padding: .8em; }
+	
+	.swipe {
+		overflow: hidden;
+		visibility: hidden;
+		position: relative;
+		height: 100%;
+	}
+	.swipe-wrap {
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+	}
+	.swipe-wrap > div {
+		float:left;
+		width:100%;
+		position: relative;
+		height: 100%;
+	}
+
+	</style>
+</head>
+
+<body>
+
+<div id='slider' class='swipe'>
+	<div class='swipe-wrap'>
+		<div>
+			<div style="background-image: url('http://placehold.it/1440x1000'); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				<div style="position: absolute; top: 5em; left: 5em; z-index:999;">
+					<p>Hello! its some text innit</p>
+				</div>
+
+			</div>
+		</div>
+		<div>
+			<div style="background-image: url('http://placehold.it/1440x1000'); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				<div style="position: absolute; top: 5em; left: 5em; z-index:999;">
+					<p>Some more content</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div style="background-image: url('http://placehold.it/1440x1000'); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				<div style="position: absolute; top: 5em; left: 5em; z-index:999;">
+					<p>differnet text</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script>
+	window.mySwipe = new Swipe(document.getElementById('slider'), {
+		speed: 300,
+		auto: 8000,
+		continuous: true,
+		disableScroll: false,
+		stopPropagation: false,
+		callback: function(index, elem) {},
+		transitionEnd: function(index, elem) {}
+	});
+</script>
+</body>
+</html>
