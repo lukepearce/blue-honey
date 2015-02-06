@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?y0y9om');
+  src:url('../fonts/icomoon.eot?#iefixy0y9om') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?y0y9om') format('woff'),
+    url('../fonts/icomoon.ttf?y0y9om') format('truetype'),
+    url('../fonts/icomoon.svg?y0y9om#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: bottom;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e602";
+}
+
+.icon-twitter:before {
+  content: "\e601";
+}
+
+.icon-instagram:before {
+  content: "\e600";
+}
+
+.icon--social {
+  margin-bottom: 0.8em;
+}
+
+.icon--social:before {
+  padding-right: 0.5em;
+  font-size: 1.6em;
+}
+
+/* -----------
+Reset
+------------ */
+
+  /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  * {
+    position: relative;
+    box-sizing: border-box;
+  }
+
+
+
+/* -----------
+Page
+
+(needs renaming)
+------------ */
+
+* {
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  zoom: 1;
+}
+
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-size: 1em;
+  font-family: "proxima-nova", Georgia, serif;
+  font-weight: normal;
+  line-height: 1.6;
+  background: #141414;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+  height: auto;
+}
+
+img,
+object,
+video,
+audio {
+  max-width: 100%;
+}
+
+
+
+/* ------------
+Typography
+-------------*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+.p,
+ul {
+  margin-bottom: 16px;
+  margin-bottom: 1.7em;
+}
+
+.h { font-family: "orator-std"; font-style: italic; text-transform: uppercase; }
+
+.h1 { font-size: 5em; line-height: 0.8; margin-bottom: 0.4em; }
+.h2 { font-size: 1.5em; line-height: 1.2; margin-bottom: 1em; }
+
+h3 { font-weight: 700; text-transform: uppercase; font-size: 0.9em; letter-spacing: 1px; }
+
+.lead {
+  font-size: 1.5em;
+  line-height: 1.35;
+}
+
+.all-caps { text-transform: uppercase; }
+
+.small {
+  font-size: .8em;
+  color: #888;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+
+/* ------------
+Components
+-------------*/
+
+.container { padding: .8em; }
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  height: 100%;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+  height: 100%;
+}
+
+.slide-content {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index:999;
+  margin-bottom: 3em;
+
+
+}
+
+  .slide-content__left,
+  .slide-content__right {
+    display: inline-block;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding-left: 3em;
+    padding-top: 2.5em;
+    padding-right: 5em;
+    padding-bottom: 1.5em;
+    vertical-align: top;
+  }
+
+  .slide-content__left {
+    margin-right: 1.5em;
+  }
+
+.social-links li {
+  color: #a1a1a1;
+  transition: color 200ms;
+}
+
+.social-links li:hover {
+  color: #fff;
+}
+
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
